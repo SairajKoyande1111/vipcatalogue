@@ -96,13 +96,16 @@ export default function Home() {
                 <div className="flex flex-col items-center gap-1">
                   <a href="tel:+919326144739" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
                   <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[11px] md:text-lg font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal">vip.itinfra@gmail.com</a>
-                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
                 </div>
               </div>
             </div>
 
+            <div className="mt-8">
+              <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
+            </div>
+
             {/* Footer Branding */}
-            <div className="mt-8 md:mt-12 flex flex-col items-center">
+            <div className="mt-4 md:mt-8 flex flex-col items-center">
               <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
               <p className="text-[#0F172A] text-xs font-bold tracking-widest">
                 AIRAVATA TECHNOLOGIES
