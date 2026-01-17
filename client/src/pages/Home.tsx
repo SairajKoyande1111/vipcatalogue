@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           {/* Social Icons Section */}
-          <div className="flex gap-6 mb-4 -mt-10">
+          <div className="flex gap-6 mb-4 -mt-12">
             <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
               <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
             </a>
@@ -76,27 +76,27 @@ export default function Home() {
             transition={{ delay: 1, duration: 1 }}
             className="flex flex-col items-center w-full max-w-4xl"
           >
-            <div className="flex flex-row items-start justify-center gap-4 md:gap-24 w-full">
+            <div className="flex flex-row items-start justify-center gap-4 md:gap-32 w-full">
               {/* Address */}
-              <div className="flex flex-col items-center md:items-start flex-1 w-full">
-                <div className="px-4 md:px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-[10px] md:text-xs uppercase">ADDRESS</span>
+              <div className="flex flex-col items-center flex-1 w-full">
+                <div className="px-6 md:px-12 py-2 border border-[#0F172A] rounded-full mb-4">
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[11px] md:text-sm uppercase">ADDRESS</span>
                 </div>
-                <p className="text-gray-700 text-[11px] md:text-base font-medium text-center md:text-left leading-tight md:leading-normal">
+                <p className="text-gray-700 text-[12px] md:text-lg font-medium text-center leading-tight md:leading-normal">
                   Jogeshwari East,<br className="md:hidden" /> Mumbai 400060,<br />
                   Maharashtra.
                 </p>
               </div>
 
               {/* Contact Details */}
-              <div className="flex flex-col items-center md:items-start flex-1 w-full">
-                <div className="px-4 md:px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-[10px] md:text-xs uppercase">CONTACT</span>
+              <div className="flex flex-col items-center flex-1 w-full text-center">
+                <div className="px-6 md:px-12 py-2 border border-[#0F172A] rounded-full mb-4">
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[11px] md:text-sm uppercase">CONTACT</span>
                 </div>
-                <div className="flex flex-col items-center md:items-start gap-1">
-                  <a href="tel:+919326144739" className="text-gray-700 text-[11px] md:text-base font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
-                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[10px] md:text-base font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal text-center md:text-left">vip.itinfra@gmail.com</a>
-                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[11px] md:text-base font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
+                <div className="flex flex-col items-center gap-1">
+                  <a href="tel:+919326144739" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
+                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[11px] md:text-lg font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal">vip.itinfra@gmail.com</a>
+                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
                 </div>
               </div>
             </div>
