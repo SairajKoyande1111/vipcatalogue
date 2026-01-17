@@ -20,8 +20,8 @@ export class MemStorage implements IStorage {
       {
         id: 1,
         title: "CCTV Surveillance & Networking",
-        category: "Security",
-        description: "",
+        description: "Deployment of HD/IP surveillance systems with NVR/DVR integration, multi-site central monitoring, and AI analytics.",
+        detailedDescription: "Deployment of HD/IP surveillance systems with NVR/DVR integration, multi-site central monitoring, and ONVIF-compliant camera configurations. Includes AI analytics (face detection, intrusion, object tracking), VLAN-based network segmentation, enterprise Wi-Fi, structured cabling, and LAN/WAN architecture with secure routing, switching, and rack-mounted server solutions.",
         bullets: [
           "HD / IP surveillance cameras with central monitoring",
           "AI-enabled analytics: face recognition, intrusion alerts",
@@ -36,8 +36,8 @@ export class MemStorage implements IStorage {
       {
         id: 2,
         title: "Thermal & Fire Detection Systems",
-        category: "Safety",
-        description: "",
+        description: "Advanced heat-sensing technology with intelligent early-warning systems to protect critical infrastructure.",
+        detailedDescription: "Our Thermal & Fire Detection solutions combine advanced heat-sensing technology with intelligent early-warning systems to protect people, infrastructure, and critical assets. We deploy AI-enabled thermal cameras, addressable fire alarm panels, and high-precision sensors that detect smoke, heat, or flame at the earliest stage—even in challenging environments where traditional detectors fail.",
         bullets: [
           "AI-Powered Fire & Smoke Detection",
           "Thermal Imaging Cameras (24/7 Heat Monitoring)",
@@ -52,8 +52,8 @@ export class MemStorage implements IStorage {
       {
         id: 3,
         title: "Intercom & IPBX Communication",
-        category: "Communication",
-        description: "",
+        description: "IP-based Intercom & IPBX systems enabling centralized multi-extension communication and SIP voice routing.",
+        detailedDescription: "IP-based Intercom & IPBX systems enable centralized multi-extension communication. SIP voice routing ensures secure and seamless calling across the facility. Video door phones and intercom units integrate directly over LAN/WAN. PoE endpoints and IPBX servers provide stable and uninterrupted operation.",
         bullets: [
           "SIP-based Intercom & IPBX communication architecture",
           "Multi-extension calling with centralized call management",
@@ -68,8 +68,8 @@ export class MemStorage implements IStorage {
       {
         id: 4,
         title: "Biometrics & Smart Access Locks",
-        category: "Security",
-        description: "",
+        description: "Biometric access systems with fingerprint, RFID, and facial recognition for secure, role-based access.",
+        detailedDescription: "Deployment of biometric access systems with fingerprint, RFID, and facial recognition controllers for secure, role-based access. Supports centralized user management, time–attendance integration, and real-time event monitoring across multi-site locations. Includes IoT-enabled smart locks, mobile-app access, and encrypted credential storage. Features PoE-powered door terminals, fail-safe/fail-secure locking mechanisms, and secure TCP/IP communication for reliable, tamper-proof operations.",
         bullets: [
           "AI-driven Facial, Fingerprint & RFID Access Control",
           "Centralized Multi-Door Management with Role-Based Permissions",
@@ -84,12 +84,12 @@ export class MemStorage implements IStorage {
       {
         id: 5,
         title: "Public Addressable (PA)",
-        category: "Communication",
-        description: "",
+        description: "IP-based PA systems with multi-zone paging and centralized announcement control for facility-wide communication.",
+        detailedDescription: "IP-based PA systems with multi-zone paging and centralized announcement control. SIP-enabled speakers, digital amplifiers, and PoE audio devices for seamless facility-wide communication. Supports emergency alerts, automated evacuation messaging, and real-time broadcasts over secure LAN/WAN. Redundant controllers with priority override ensure reliable and uninterrupted PA operations.",
         bullets: [
           "IP/SIP-based multi-zone paging for building-wide communication",
           "Centralized announcement control with priority override",
-          "PoE-powered speakers and digital amplifiers",
+          "PoE-powered speakers and digital amplifiers for seamless deployment",
           "Automated emergency alerts and evacuation messaging",
           "Real-time broadcast capability over secure LAN/WAN networks",
           "Redundant controllers for uninterrupted PA operations",
@@ -100,8 +100,8 @@ export class MemStorage implements IStorage {
       {
         id: 6,
         title: "Audio Visual & Room Automation",
-        category: "Automation",
-        description: "Cutting-edge Audio-Visual integration and smart room automation systems designed to enhance collaboration, communication, and user experience for meeting rooms, classrooms, and auditoriums.",
+        description: "Smart room automation systems designed to enhance collaboration, communication, and user experience.",
+        detailedDescription: "We offer cutting-edge Audio-Visual integration and smart room automation systems designed to enhance collaboration, communication, and user experience. Our solutions include interactive displays, conference room AV setups, digital signage, integrated sound systems, lighting and climate automation, and centralized control platforms. With scalable and intuitive technologies, we transform meeting rooms, classrooms, auditoriums, and commercial spaces into intelligent environments that deliver seamless performance and operational efficiency.",
         bullets: [
           "Smart Meeting Room Integration",
           "LED Displays, Projectors & Interactive Panels",
@@ -116,8 +116,8 @@ export class MemStorage implements IStorage {
       {
         id: 7,
         title: "Projector & Display Solutions",
-        category: "AV",
-        description: "Advanced projector and display solutions for corporate boardrooms, classrooms, retail showrooms, and large-scale events. Integration of LED walls, interactive displays, and laser projectors.",
+        description: "Advanced projector and display solutions for corporate boardrooms, classrooms, and retail showrooms.",
+        detailedDescription: "We provide a wide range of advanced projector and display solutions designed for corporate boardrooms, classrooms, retail showrooms, control rooms, and large-scale events. Our expertise includes installation, calibration, and integration of LED walls, interactive displays, laser projectors, and video conferencing displays. With high-resolution visuals and reliable performance, we ensure seamless presentations and impactful visual experiences tailored to your space and requirements.",
         bullets: [
           "LED / LCD / Smart TV Display Integration",
           "Commercial Display & Video Wall Solutions",
@@ -132,8 +132,8 @@ export class MemStorage implements IStorage {
       {
         id: 8,
         title: "Printers / Desktop / Laptop",
-        category: "IT Hardware",
-        description: "Complete IT hardware solutions including Printers, Desktops, Laptops, and Accessories. Sales, AMC support, repair, maintenance, and software installation.",
+        description: "Complete IT hardware solutions including printers, desktops, laptops, and accessories with maintenance support.",
+        detailedDescription: "We specialize in providing complete IT hardware solutions, including Printers, Desktops, Laptops, and Accessories. Our services cover new product sales, AMC support, repair & maintenance, software installation, and parts replacement for all major brands. With a skilled technical team and quick response service model, we ensure smooth operations and minimal downtime for our customers. We are committed to delivering reliable products, cost-effective solutions, and excellent after-sales support to businesses and individuals.",
         bullets: [
           "Printer Cartridge / Toner Supply Management",
           "Annual Maintenance Contracts (AMC)",
@@ -147,8 +147,8 @@ export class MemStorage implements IStorage {
       {
         id: 9,
         title: "UPS & Battery Solutions",
-        category: "Power",
-        description: "Reliable power backup solutions to ensure uninterrupted operations for critical infrastructure. Comprehensive UPS and battery management systems.",
+        description: "Reliable power backup solutions with advanced monitoring to ensure uninterrupted operations.",
+        detailedDescription: "Reliable power backup solutions to ensure uninterrupted operations for critical infrastructure. Comprehensive UPS and battery management systems. Includes online & line-interactive UPS systems, battery health monitoring, and enterprise power backup solutions with remote alerts.",
         bullets: [
           "Online & Line-Interactive UPS Systems",
           "Battery Health Monitoring & Management",
@@ -163,8 +163,8 @@ export class MemStorage implements IStorage {
       {
         id: 10,
         title: "IoT / Cloud / Software Solutions",
-        category: "Software",
-        description: "Smart device integration with real-time data monitoring and automation. Secure cloud infrastructure for scalable storage and remote management.",
+        description: "Smart device integration with real-time data monitoring and secure cloud infrastructure.",
+        detailedDescription: "Smart device integration with real-time data monitoring and automation. Secure cloud infrastructure for scalable storage and remote management. Custom software applications to streamline workflows and enhance system performance. End-to-end digital solutions enabling efficient, connected, and data-driven operations.",
         bullets: [
           "Serverless Computing",
           "Hybrid & Multi-Cloud Architecture",
@@ -178,8 +178,8 @@ export class MemStorage implements IStorage {
       {
         id: 11,
         title: "Network Booster",
-        category: "Networking",
-        description: "",
+        description: "Enhance network performance by improving speed, stability, and coverage across your facility.",
+        detailedDescription: "Enhances your existing network performance by improving speed, stability, and coverage. Optimizes bandwidth distribution, reduces latency, and eliminates dead zones using advanced signal-routing and load-balancing technology.",
         bullets: [
           "AI-Optimized Traffic Routing",
           "Edge-Based Signal Amplification",
@@ -191,9 +191,6 @@ export class MemStorage implements IStorage {
         icon: "lottie:network"
       }
     ];
-  }
-
-  async getUser(id: string): Promise<User | undefined> {
     return this.users.get(id);
   }
 

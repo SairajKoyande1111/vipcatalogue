@@ -94,6 +94,17 @@ export default function ServiceDetail() {
               {service.description}
             </p>
 
+            {service.detailedDescription && (
+              <div className="mb-12">
+                <h2 className="text-2xl font-display font-bold text-white mb-6 uppercase tracking-wider border-l-4 border-primary pl-4">
+                  Overview
+                </h2>
+                <p className="text-gray-300 text-lg leading-relaxed whitespace-pre-wrap">
+                  {service.detailedDescription}
+                </p>
+              </div>
+            )}
+
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-white mb-6">Key Features & Benefits</h3>
               

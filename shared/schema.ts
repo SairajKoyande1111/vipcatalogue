@@ -6,6 +6,7 @@ export const services = pgTable("services", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(),
   description: text("description").notNull(),
+  detailedDescription: text("detailed_description"),
   bullets: text("bullets").array().notNull(),
   icon: text("icon").notNull(),
 });
@@ -13,6 +14,7 @@ export const services = pgTable("services", {
 export const insertServiceSchema = createInsertSchema(services).pick({
   title: true,
   description: true,
+  detailedDescription: true,
   bullets: true,
   icon: true,
 });
