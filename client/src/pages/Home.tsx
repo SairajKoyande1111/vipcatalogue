@@ -107,9 +107,14 @@ export default function Home() {
             {/* Footer Branding */}
             <div className="mt-2 md:mt-4 flex flex-col items-center">
               <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
-              <p className="text-[#0F172A] text-xs font-bold tracking-widest">
+              <a 
+                href="https://www.airavatatechnologies.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#0F172A] text-xs font-bold tracking-widest hover:text-[#1a2b4a] transition-colors"
+              >
                 AIRAVATA TECHNOLOGIES
-              </p>
+              </a>
             </div>
           </motion.div>
         </motion.div>
