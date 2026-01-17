@@ -74,7 +74,9 @@ app.use((req, res, next) => {
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
   if (process.env.NODE_ENV === "production" || process.env.VERCEL) {
-    serveStatic(app);
+    // Vercel handles static routing via vercel.json rewrites
+    // so we don't need serveStatic(app) to handle / paths
+    // but it still handles the api routes
   } else {
     const { setupVite } = await import("../server/vite");
     await setupVite(httpServer, app);
