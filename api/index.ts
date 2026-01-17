@@ -1,6 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
-import { registerRoutes } from "../server/routes.js";
-import { serveStatic } from "../server/static.js";
+import { registerRoutes } from "../server/routes";
+import { serveStatic } from "../server/static";
 import { createServer } from "http";
 
 const app = express();
