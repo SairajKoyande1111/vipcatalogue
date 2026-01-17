@@ -18,11 +18,11 @@ export default function Home() {
           className="w-full flex flex-col items-center"
         >
           {/* Logo Section */}
-          <div className="mb-6 flex flex-col items-center -mt-6">
+          <div className="mb-2 flex flex-col items-center -mt-8">
             <motion.img 
               src={logoImg} 
               alt="VIP Networks Logo" 
-              className="w-[28rem] md:w-[32rem] lg:w-[36rem] h-auto"
+              className="w-[24rem] md:w-[28rem] lg:w-[32rem] h-auto"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -30,23 +30,23 @@ export default function Home() {
           </div>
 
           {/* Social Icons Section */}
-          <div className="flex gap-4 mb-8">
-            <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src={instagramIcon} alt="Instagram" className="w-8 h-8" />
+          <div className="flex gap-6 mb-8">
+            <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
             </a>
-            <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" />
+            <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
             </a>
-            <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-              <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
+            <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+              <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />
             </a>
           </div>
 
           {/* CTA Button Section */}
-          <div className="w-full max-w-sm mb-6">
+          <div className="w-full max-w-sm mb-8">
             <Link href="/services">
-              <button className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center gap-3">
-                <span className="text-xl">🛠️</span> EXPLORE OUR SERVICES
+              <button className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center">
+                EXPLORE OUR SERVICES
               </button>
             </Link>
           </div>
