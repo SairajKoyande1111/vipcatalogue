@@ -18,11 +18,11 @@ export default function Home() {
           className="w-full flex flex-col items-center"
         >
           {/* Logo Section */}
-          <div className="mb-2 flex flex-col items-center -mt-8">
+          <div className="mb-0 flex flex-col items-center -mt-12">
             <motion.img 
               src={logoImg} 
               alt="VIP Networks Logo" 
-              className="w-[24rem] md:w-[28rem] lg:w-[32rem] h-auto"
+              className="w-[22rem] md:w-[26rem] lg:w-[30rem] h-auto"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           {/* Social Icons Section */}
-          <div className="flex gap-6 mb-8">
+          <div className="flex gap-6 mb-6 -mt-2">
             <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
               <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
             </a>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
 
           {/* CTA Button Section */}
-          <div className="w-full max-w-sm mb-8">
+          <div className="w-full max-w-xs mb-8">
             <Link href="/services">
               <button className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center">
                 EXPLORE OUR SERVICES
@@ -63,7 +63,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform cursor-pointer"
                 >
-                  <Star size={28} className="text-[#B8986A] fill-[#B8986A]" />
+                  <Star size={28} className="text-[#FFD700] fill-[#FFD700]" />
                 </a>
               ))}
             </div>
@@ -82,9 +82,8 @@ export default function Home() {
                 <span className="text-[#0F172A] font-bold tracking-widest text-xs uppercase">ADDRESS</span>
               </div>
               <p className="text-gray-700 text-sm md:text-base font-medium text-center px-4">
-                Shop No: 3, Madanlal Dhingra Rd,<br />
-                beside Satranj Wafers, Bhakti Mandir,<br />
-                Panch Pakhdi, Thane West
+                Jogeshwari East, Mumbai 400060,<br />
+                Maharashtra.
               </p>
             </div>
 
