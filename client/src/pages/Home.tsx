@@ -80,9 +80,9 @@ export default function Home() {
               {/* Address */}
               <div className="flex flex-col items-center flex-1 w-full">
                 <div className="px-6 md:px-12 py-2 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-[11px] md:text-sm uppercase">ADDRESS</span>
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[13px] md:text-base uppercase">ADDRESS</span>
                 </div>
-                <p className="text-gray-700 text-[12px] md:text-lg font-medium text-center leading-tight md:leading-normal">
+                <p className="text-gray-700 text-[14px] md:text-xl font-medium text-center leading-tight md:leading-normal">
                   Jogeshwari East,<br className="md:hidden" /> Mumbai 400060,<br />
                   Maharashtra.
                 </p>
@@ -91,17 +91,17 @@ export default function Home() {
               {/* Contact Details */}
               <div className="flex flex-col items-center flex-1 w-full text-center">
                 <div className="px-6 md:px-12 py-2 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-[11px] md:text-sm uppercase">CONTACT</span>
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[13px] md:text-base uppercase">CONTACT</span>
                 </div>
                 <div className="flex flex-col items-center gap-1">
-                  <a href="tel:+919326144739" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
-                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[11px] md:text-lg font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal">vip.itinfra@gmail.com</a>
+                  <a href="tel:+919326144739" className="text-gray-700 text-[14px] md:text-xl font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
+                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[13px] md:text-xl font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal">vip.itinfra@gmail.com</a>
                 </div>
               </div>
             </div>
 
             <div className="mt-4">
-              <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
+              <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[14px] md:text-xl font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
             </div>
 
             {/* Footer Branding */}
