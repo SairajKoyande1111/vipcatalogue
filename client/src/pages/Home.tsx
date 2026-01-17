@@ -63,7 +63,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="hover:scale-110 transition-transform cursor-pointer"
                 >
-                  <Star size={28} className="text-[#FFD700] fill-[#FFD700]" />
+                  <Star size={28} className="text-[#0F172A] fill-[#0F172A]" />
                 </a>
               ))}
             </div>
