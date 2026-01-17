@@ -28,6 +28,27 @@ const lottieAnimations: Record<number, any> = {
   10: iotAnimation,
 };
 
+// Map internal Lottie image paths to public URLs
+const patchLottie = (data: any) => {
+  if (!data || !data.assets) return data;
+  const newData = JSON.parse(JSON.stringify(data));
+  newData.assets.forEach((asset: any) => {
+    if (asset.p) {
+      // Set u to point to the public images directory
+      asset.u = "/images/";
+    }
+  });
+  return newData;
+};
+
+const patchedLottieAnimations: Record<number, any> = {
+  6: patchLottie(isometricData),
+  7: patchLottie(dashboards),
+  8: patchLottie(wifiPrinter),
+  9: patchLottie(carBattery),
+  10: patchLottie(iotAnimation),
+};
+
 const serviceImages: Record<number, string> = {
   1: cctvImg,
   2: thermalImg,
@@ -107,7 +128,7 @@ export default function Services() {
             const displayImage = serviceImages[service.id] || defaultImg;
             const isWhiteCard = [1, 11, 3, 2, 4, 5, 6, 7, 8, 9, 10].includes(service.id);
             const isLottieCard = [6, 7, 8, 9, 10].includes(service.id);
-            const lottieData = lottieAnimations[service.id];
+            const lottieData = patchedLottieAnimations[service.id];
 
             return (
               <Link key={service.id} href={`/services/${service.id}`}>
