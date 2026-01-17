@@ -86,10 +86,6 @@ export default function ServiceDetail() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <div className="inline-block px-3 py-1 rounded-md bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6">
-              VIP Solution
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8">
               {service.title}
             </h1>

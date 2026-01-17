@@ -161,11 +161,6 @@ export default function Services() {
                     </div>
                     
                     {/* Content */}
-                    <div className="mb-2">
-                      <span className={`text-[10px] uppercase tracking-[0.2em] font-bold ${isWhiteCard ? 'text-black/40' : 'text-primary/60'}`}>
-                        VIP Solution
-                      </span>
-                    </div>
                     <h3 className={`text-2xl font-display font-bold mb-3 transition-colors uppercase ${isWhiteCard ? 'text-black' : 'text-white group-hover:text-primary'}`}>
                       {service.title}
                     </h3>
