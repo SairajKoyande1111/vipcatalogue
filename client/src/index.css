@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Deep Luxury Blue Theme */
+  --background: 222 47% 11%;     /* #0f172a - Slate 900 */
+  --foreground: 210 40% 98%;     /* #f8fafc - Slate 50 */
+  
+  --card: 222 47% 13%;          /* Slightly lighter than bg */
+  --card-foreground: 210 40% 98%;
+  
+  --popover: 222 47% 11%;
+  --popover-foreground: 210 40% 98%;
+  
+  --primary: 210 100% 50%;      /* Azure Blue for Technology/Professionalism */
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 217 33% 17%;     /* #1e293b - Slate 800 */
+  --secondary-foreground: 210 40% 98%;
+  
+  --muted: 217 33% 25%;
+  --muted-foreground: 215 20% 65%;
+  
+  --accent: 210 100% 50%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 217 33% 20%;
+  --input: 217 33% 20%;
+  --ring: 45 93% 47%;
+  
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-primary-foreground;
+    font-family: var(--font-body);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+/* Custom Scrollbar for brochure feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary rounded-full border-2 border-background;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted;
+}
