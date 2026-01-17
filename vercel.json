@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "api/index.ts",
       "use": "@vercel/node"
     },
     {
@@ -13,24 +13,14 @@
       }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "server/index.ts"
+      "source": "/api/(.*)",
+      "destination": "/api/index.ts"
     },
     {
-      "src": "/assets/(.*)",
-      "dest": "/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/public/$1",
-      "check": true
-    },
-    {
-      "src": "/(.*)",
-      "status": 200,
-      "dest": "dist/public/index.html"
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ]
 }
