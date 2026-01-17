@@ -82,30 +82,29 @@ export function Navigation() {
               initial="closed"
               animate="open"
               exit="closed"
-              className="fixed top-0 right-0 bottom-0 w-full md:w-[400px] bg-white z-[70] p-8 flex flex-col shadow-2xl rounded-l-3xl overflow-y-auto"
+              className="fixed top-0 right-0 bottom-0 w-full md:w-[400px] bg-white z-[70] p-8 flex flex-col shadow-2xl overflow-y-auto"
             >
               <div className="flex justify-between items-center mb-12">
-                <span className="text-2xl font-display font-bold text-[#3b82f6] uppercase">Menu</span>
+                <span className="text-2xl font-bold text-[#0F172A] uppercase tracking-wider">Menu</span>
                 <button 
                   onClick={toggleMenu}
-                  className="p-2 bg-gray-50 rounded-full text-gray-400 hover:text-primary transition-colors"
+                  className="p-2 bg-gray-50 rounded-full text-gray-400 hover:text-[#0F172A] transition-colors"
                 >
                   <X className="w-6 h-6" />
                 </button>
               </div>
 
               <div className="mb-8">
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Categories</p>
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-6">Services</p>
                 <nav className="flex flex-col space-y-2">
-                  {menuItems.map((item) => (
+                  {services?.map((service) => (
                     <Link 
-                      key={item.label} 
-                      href={item.href} 
-                      className={`flex items-center gap-4 p-4 rounded-2xl transition-all ${location === item.href ? 'bg-[#3b82f6]/10 text-[#3b82f6]' : 'hover:bg-gray-50 text-gray-700'}`}
+                      key={service.id} 
+                      href={`/services/${service.id}`}
+                      className={`flex items-center gap-4 p-4 rounded-xl transition-all ${location === `/services/${service.id}` ? 'bg-[#0F172A]/10 text-[#0F172A]' : 'hover:bg-gray-50 text-gray-700'}`}
                       onClick={() => setIsOpen(false)}
                     >
-                      <item.icon className="w-5 h-5" />
-                      <span className="font-display font-bold uppercase tracking-wide">{item.label}</span>
+                      <span className="font-bold uppercase tracking-wide text-sm">{service.title}</span>
                     </Link>
                   ))}
                 </nav>
@@ -115,32 +114,32 @@ export function Navigation() {
 
               <div className="space-y-6 pt-8 border-t border-gray-100">
                 <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Shop Information</p>
-                <div className="flex items-start gap-3 text-gray-500">
-                  <MapPin className="w-5 h-5 text-[#3b82f6] shrink-0 mt-1" />
-                  <p className="text-sm">Jogeshwari East, Mumbai - 400060, Maharashtra, India</p>
+                <div className="flex items-start gap-3 text-gray-600">
+                  <MapPin className="w-5 h-5 text-[#0F172A] shrink-0 mt-1" />
+                  <p className="text-sm font-medium">Jogeshwari East, Mumbai - 400060, Maharashtra, India</p>
                 </div>
                 
-                <div className="flex items-center gap-3 text-gray-500">
-                  <Phone className="w-5 h-5 text-[#3b82f6] shrink-0" />
-                  <a href="tel:+919326144739" className="text-sm hover:text-[#3b82f6] transition-colors">+91 9326144739</a>
+                <div className="flex items-center gap-3 text-gray-600">
+                  <Phone className="w-5 h-5 text-[#0F172A] shrink-0" />
+                  <a href="tel:+919326144739" className="text-sm font-medium hover:text-[#0F172A] transition-colors">+91 9326144739</a>
                 </div>
 
-                <div className="flex items-center gap-3 text-gray-500">
-                  <Mail className="w-5 h-5 text-[#3b82f6] shrink-0" />
-                  <a href="mailto:vip.itinfra@gmail.com" className="text-sm hover:text-[#3b82f6] transition-colors">vip.itinfra@gmail.com</a>
+                <div className="flex items-center gap-3 text-gray-600">
+                  <Mail className="w-5 h-5 text-[#0F172A] shrink-0" />
+                  <a href="mailto:vip.itinfra@gmail.com" className="text-sm font-medium hover:text-[#0F172A] transition-colors">vip.itinfra@gmail.com</a>
                 </div>
 
                 <div className="pt-6">
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Connect With Us</p>
                   <div className="flex gap-4">
-                    <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="p-3 bg-gradient-to-tr from-purple-600 to-pink-500 rounded-full text-white hover:scale-110 transition-transform shadow-lg">
-                      <Instagram size={20} />
+                    <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                      <img src="/attached_assets/instagram_1768672404823.png" alt="Instagram" className="w-10 h-10" />
                     </a>
-                    <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="p-3 bg-green-500 rounded-full text-white hover:scale-110 transition-transform shadow-lg">
-                      <MessageCircle size={20} />
+                    <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                      <img src="/attached_assets/logo_1768672400400.png" alt="WhatsApp" className="w-10 h-10" />
                     </a>
-                    <a href="https://youtube.com/@vipnetworks" target="_blank" rel="noopener noreferrer" className="p-3 bg-red-600 rounded-full text-white hover:scale-110 transition-transform shadow-lg">
-                      <Youtube size={20} />
+                    <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                      <img src="/attached_assets/linkedin_1768672408422.png" alt="LinkedIn" className="w-10 h-10" />
                     </a>
                   </div>
                 </div>
