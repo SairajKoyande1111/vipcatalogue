@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Mail, Phone, MapPin, ArrowLeft, Gem, UserCheck, Handshake, Instagram, Youtube, MessageCircle } from "lucide-react";
+import { Menu, X, Mail, Phone, MapPin, ArrowLeft, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useServices } from "@/hooks/use-services";
+import instagramIcon from '@assets/instagram_1768672404823.png';
+import whatsappIcon from '@assets/logo_1768672400400.png';
+import linkedinIcon from '@assets/linkedin_1768672408422.png';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,17 +132,22 @@ export function Navigation() {
                   <a href="mailto:vip.itinfra@gmail.com" className="text-sm font-medium hover:text-[#0F172A] transition-colors">vip.itinfra@gmail.com</a>
                 </div>
 
+                <div className="flex items-center gap-3 text-gray-600">
+                  <Globe className="w-5 h-5 text-[#0F172A] shrink-0" />
+                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
+                </div>
+
                 <div className="pt-6">
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Connect With Us</p>
                   <div className="flex gap-4">
                     <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src="/attached_assets/instagram_1768672404823.png" alt="Instagram" className="w-10 h-10" />
+                      <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
                     </a>
                     <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src="/attached_assets/logo_1768672400400.png" alt="WhatsApp" className="w-10 h-10" />
+                      <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
                     </a>
                     <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src="/attached_assets/linkedin_1768672408422.png" alt="LinkedIn" className="w-10 h-10" />
+                      <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />
                     </a>
                   </div>
                 </div>
