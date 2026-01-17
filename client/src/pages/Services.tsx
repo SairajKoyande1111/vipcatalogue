@@ -5,7 +5,7 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { ArrowRight, Loader2 } from "lucide-react";
 import Lottie from "lottie-react";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
-import dashboardsLottie from "@/assets/lottie/dashboards.lottie";
+import dashboardsLottie from "@/assets/lottie/dashboards.lottie?url";
 import cctvAnimation from "@/assets/cctv.json";
 
 // Import generated images
