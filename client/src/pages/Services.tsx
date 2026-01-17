@@ -13,6 +13,21 @@ import networkingImg from '@assets/generated_images/modern_server_room_networkin
 import wifiImg from '@assets/generated_images/wireless_access_point_networking_device.png';
 import defaultImg from '@assets/stock_images/it_infrastructure_an_c2bc155e.jpg';
 
+// Import Lottie animations
+import isometricData from "@/assets/lottie/isometric_data.json";
+import dashboards from "@/assets/lottie/dashboards.json";
+import wifiPrinter from "@/assets/lottie/wifi_printer.json";
+import carBattery from "@/assets/lottie/car_battery.json";
+import iotAnimation from "@/assets/lottie/iot.json";
+
+const lottieAnimations: Record<number, any> = {
+  6: isometricData,
+  7: dashboards,
+  8: wifiPrinter,
+  9: carBattery,
+  10: iotAnimation,
+};
+
 const serviceImages: Record<number, string> = {
   1: cctvImg,
   2: thermalImg,
@@ -90,7 +105,10 @@ export default function Services() {
         >
           {services?.map((service) => {
             const displayImage = serviceImages[service.id] || defaultImg;
-            const isWhiteCard = [1, 11, 3, 2, 4, 5].includes(service.id);
+            const isWhiteCard = [1, 11, 3, 2, 4, 5, 6, 7, 8, 9, 10].includes(service.id);
+            const isLottieCard = [6, 7, 8, 9, 10].includes(service.id);
+            const lottieData = lottieAnimations[service.id];
+
             return (
               <Link key={service.id} href={`/services/${service.id}`}>
                 <motion.div 
@@ -105,14 +123,18 @@ export default function Services() {
                   <div className="relative z-10 flex flex-col items-center h-full w-full">
                     {/* Icon / Animation */}
                     <div className={`flex items-center justify-center mb-6 transition-colors ${isWhiteCard ? 'w-full h-48' : 'w-32 h-32 rounded-full bg-[#0f172a]/80 group-hover:bg-primary/10 border border-white/5'}`}>
-                      <ServiceIcon iconName={service.icon} className={isWhiteCard ? 'w-full h-full' : 'w-24 h-24 text-primary'} />
+                      {isLottieCard ? (
+                        <Lottie animationData={lottieData} loop={true} className="w-full h-full" />
+                      ) : (
+                        <ServiceIcon iconName={service.icon} className={isWhiteCard ? 'w-full h-full' : 'w-24 h-24 text-primary'} />
+                      )}
                     </div>
                     
                     {/* Content */}
                     <h3 className={`text-2xl font-display font-bold mb-3 transition-colors uppercase ${isWhiteCard ? 'text-black' : 'text-white group-hover:text-primary'}`}>
                       {service.title}
                     </h3>
-                    {!isWhiteCard && service.description && (
+                    {!isWhiteCard && !isLottieCard && service.description && (
                       <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
                         {service.description}
                       </p>
