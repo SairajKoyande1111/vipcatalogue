@@ -4,6 +4,8 @@ import { useServices } from "@/hooks/use-services";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { ArrowRight, Loader2 } from "lucide-react";
 import Lottie from "lottie-react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import dashboardsLottie from "@/assets/lottie/dashboards.lottie";
 import cctvAnimation from "@/assets/cctv.json";
 
 // Import generated images
@@ -31,7 +33,7 @@ import iotAnimation from "@/assets/lottie/iot.json";
 
 const lottieAnimations: Record<number, any> = {
   6: isometricData,
-  7: dashboards,
+  7: dashboardsLottie,
   8: wifiPrinter,
   9: carBattery,
   10: iotAnimation,
@@ -52,7 +54,7 @@ const patchLottie = (data: any) => {
 
 const patchedLottieAnimations: Record<number, any> = {
   6: patchLottie(isometricData),
-  7: patchLottie(dashboards),
+  7: dashboardsLottie,
   8: patchLottie(wifiPrinter),
   9: patchLottie(carBattery),
   10: patchLottie(iotAnimation),
@@ -154,7 +156,11 @@ export default function Services() {
                     {/* Icon / Animation */}
                     <div className={`flex items-center justify-center mb-6 transition-colors ${isWhiteCard ? 'w-full h-48' : 'w-32 h-32 rounded-full bg-[#0f172a]/80 group-hover:bg-primary/10 border border-white/5'}`}>
                       {isLottieCard ? (
-                        <Lottie animationData={lottieData} loop={true} className="w-full h-full" />
+                        service.id === 7 ? (
+                          <DotLottieReact src={dashboardsLottie} loop autoplay className="w-full h-full" />
+                        ) : (
+                          <Lottie animationData={lottieData} loop={true} className="w-full h-full" />
+                        )
                       ) : (
                         <ServiceIcon iconName={service.icon} className={isWhiteCard ? 'w-full h-full' : 'w-24 h-24 text-primary'} />
                       )}
