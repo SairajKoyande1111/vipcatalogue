@@ -7,11 +7,20 @@ import Lottie from "lottie-react";
 import cctvAnimation from "@/assets/cctv.json";
 
 // Import generated images
-import cctvImg from '@assets/generated_images/modern_cctv_security_cameras_setup.png';
-import thermalImg from '@assets/generated_images/thermal_and_fire_detection_system.png';
-import networkingImg from '@assets/generated_images/modern_server_room_networking_equipment.png';
-import wifiImg from '@assets/generated_images/wireless_access_point_networking_device.png';
 import defaultImg from '@assets/stock_images/it_infrastructure_an_c2bc155e.jpg';
+
+// Import new service images
+import img1 from '@assets/image_1768670763884.png';
+import img2 from '@assets/image_1768670897509.png';
+import img3 from '@assets/image_1768671048583.png';
+import img4 from '@assets/image_1768671151946.png';
+import img5 from '@assets/image_1768671250449.png';
+import img6 from '@assets/image_1768671319386.png';
+import img7 from '@assets/image_1768671412384.png';
+import img8 from '@assets/image_1768671439267.png';
+import img9 from '@assets/image_1768671480284.png';
+import img10 from '@assets/image_1768671507203.png';
+import img11 from '@assets/image_1768671560428.png';
 
 // Import Lottie animations
 import isometricData from "@/assets/lottie/isometric_data.json";
@@ -50,17 +59,17 @@ const patchedLottieAnimations: Record<number, any> = {
 };
 
 const serviceImages: Record<number, string> = {
-  1: cctvImg,
-  2: thermalImg,
-  3: networkingImg,
-  4: defaultImg,
-  5: networkingImg,
-  6: defaultImg,
-  7: defaultImg,
-  8: defaultImg,
-  9: defaultImg,
-  10: networkingImg,
-  11: wifiImg,
+  1: img1,
+  2: img2,
+  3: img3,
+  4: img4,
+  5: img5,
+  6: img6,
+  7: img7,
+  8: img8,
+  9: img9,
+  10: img10,
+  11: img11,
 };
 
 const container = {
@@ -152,6 +161,11 @@ export default function Services() {
                     </div>
                     
                     {/* Content */}
+                    <div className="mb-2">
+                      <span className={`text-[10px] uppercase tracking-[0.2em] font-bold ${isWhiteCard ? 'text-black/40' : 'text-primary/60'}`}>
+                        VIP Solution
+                      </span>
+                    </div>
                     <h3 className={`text-2xl font-display font-bold mb-3 transition-colors uppercase ${isWhiteCard ? 'text-black' : 'text-white group-hover:text-primary'}`}>
                       {service.title}
                     </h3>
