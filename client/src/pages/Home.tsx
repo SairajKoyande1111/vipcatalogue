@@ -8,111 +8,106 @@ import linkedinIcon from '@assets/linkedin_1768672408422.png';
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-center bg-white">
+    <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-start bg-white pt-10 pb-10">
       {/* Main Content */}
-      <div className="container mx-auto px-6 relative z-20 text-center">
+      <div className="container mx-auto px-6 relative z-20 text-center flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="max-w-4xl mx-auto flex flex-col items-center"
+          className="w-full flex flex-col items-center"
         >
-          {/* Logo/Title */}
-          <div className="mb-12 flex flex-col items-center">
+          {/* Logo Section */}
+          <div className="mb-6 flex flex-col items-center -mt-6">
             <motion.img 
               src={logoImg} 
               alt="VIP Networks Logo" 
-              className="w-[32rem] md:w-[40rem] lg:w-[48rem] h-auto mb-2"
+              className="w-[28rem] md:w-[32rem] lg:w-[36rem] h-auto"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             />
           </div>
 
-          {/* CTA Button */}
-          <div className="flex flex-col items-center gap-12 w-full">
+          {/* Social Icons Section */}
+          <div className="flex gap-4 mb-8">
+            <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+              <img src={instagramIcon} alt="Instagram" className="w-8 h-8" />
+            </a>
+            <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+              <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" />
+            </a>
+            <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+              <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8" />
+            </a>
+          </div>
+
+          {/* CTA Button Section */}
+          <div className="w-full max-w-sm mb-6">
             <Link href="/services">
-              <button className="group px-14 py-5 bg-[#0F172A] text-white rounded-full font-bold text-xl hover:scale-105 transition-all shadow-xl">
-                Explore our Services
+              <button className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center gap-3">
+                <span className="text-xl">🛠️</span> EXPLORE OUR SERVICES
               </button>
             </Link>
-
-            {/* Social Icons */}
-            <div className="flex gap-10 mt-4">
-              <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <img src={instagramIcon} alt="Instagram" className="w-14 h-14" />
-              </a>
-              <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <img src={whatsappIcon} alt="WhatsApp" className="w-14 h-14" />
-              </a>
-              <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <img src={linkedinIcon} alt="LinkedIn" className="w-14 h-14" />
-              </a>
-            </div>
-
-            {/* Rating Stars */}
-            <div className="mt-4">
-              <p className="text-gray-500 text-sm mb-4 uppercase tracking-widest font-bold">Rate Your Experience</p>
-              <div className="flex gap-2 justify-center">
-                {[...Array(5)].map((_, i) => (
-                  <a 
-                    key={i} 
-                    href="https://g.page/r/your-google-review-link" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition-transform cursor-pointer"
-                  >
-                    <Star size={32} className="text-yellow-500 fill-yellow-500" />
-                  </a>
-                ))}
-              </div>
-              <p className="text-gray-400 text-xs mt-4">Click to leave a Google review</p>
-            </div>
-
-            {/* Contact Details Redesign */}
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1, duration: 1 }}
-              className="mt-16 flex flex-col items-center gap-12 w-full max-w-2xl"
-            >
-              {/* Address Section */}
-              <div className="flex flex-col items-center gap-6">
-                <div className="px-10 py-2 border-2 border-[#0F172A] rounded-full">
-                  <span className="text-[#0F172A] font-bold tracking-[0.2em] text-sm md:text-base">ADDRESS</span>
-                </div>
-                <p className="text-gray-800 text-lg md:text-xl font-medium leading-relaxed max-w-md">
-                  Jogeshwari East, Mumbai - 400060,<br /> Maharashtra.
-                </p>
-              </div>
-
-              {/* Contact Section */}
-              <div className="flex flex-col items-center gap-6">
-                <div className="px-10 py-2 border-2 border-[#0F172A] rounded-full">
-                  <span className="text-[#0F172A] font-bold tracking-[0.2em] text-sm md:text-base">CONTACT</span>
-                </div>
-                <div className="flex flex-col items-center gap-3">
-                  <a href="tel:+919326144739" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
-                    +91 9326144739
-                  </a>
-                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
-                    vip.itinfra@gmail.com
-                  </a>
-                  <a href="https://vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
-                    www.vipnetworks.in
-                  </a>
-                </div>
-              </div>
-
-              {/* Footer Branding */}
-              <div className="mt-8 flex flex-col items-center gap-1">
-                <p className="text-gray-500 text-xs md:text-sm font-medium">Developed By</p>
-                <p className="text-[#0F172A] text-sm md:text-base font-bold tracking-widest">
-                  AIRAVATA TECHNOLOGIES
-                </p>
-              </div>
-            </motion.div>
           </div>
+
+          {/* Rating Section */}
+          <div className="mb-8">
+            <p className="text-gray-600 text-sm mb-3">Click to Rate us on Google</p>
+            <div className="flex gap-1 justify-center">
+              {[...Array(5)].map((_, i) => (
+                <a 
+                  key={i} 
+                  href="https://g.page/r/your-google-review-link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform cursor-pointer"
+                >
+                  <Star size={28} className="text-[#B8986A] fill-[#B8986A]" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact Details Section */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+            className="flex flex-col items-center w-full max-w-md"
+          >
+            {/* Address */}
+            <div className="mb-6 flex flex-col items-center">
+              <div className="px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
+                <span className="text-[#0F172A] font-bold tracking-widest text-xs uppercase">ADDRESS</span>
+              </div>
+              <p className="text-gray-700 text-sm md:text-base font-medium text-center px-4">
+                Shop No: 3, Madanlal Dhingra Rd,<br />
+                beside Satranj Wafers, Bhakti Mandir,<br />
+                Panch Pakhdi, Thane West
+              </p>
+            </div>
+
+            {/* Contact Details */}
+            <div className="mb-6 flex flex-col items-center">
+              <div className="px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
+                <span className="text-[#0F172A] font-bold tracking-widest text-xs uppercase">CONTACT</span>
+              </div>
+              <div className="flex flex-col items-center gap-1">
+                <a href="tel:+919326144739" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">+91 9326144739</a>
+                <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">vip.itinfra@gmail.com</a>
+                <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">www.vipnetworks.in</a>
+              </div>
+            </div>
+
+            {/* Footer Branding */}
+            <div className="mt-4 flex flex-col items-center">
+              <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
+              <p className="text-[#0F172A] text-xs font-bold tracking-widest">
+                AIRAVATA TECHNOLOGIES
+              </p>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>
