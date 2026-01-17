@@ -1,21 +1,15 @@
-import { users, type User, type InsertUser, type Service } from "@shared/schema";
+import { type Service } from "@shared/schema";
 
 export interface IStorage {
-  getUser(id: string): Promise<User | undefined>;
-  getUserByUsername(username: string): Promise<User | undefined>;
-  createUser(user: InsertUser): Promise<User>;
-  
   // Services (Brochure Content)
   getServices(): Promise<Service[]>;
   getService(id: number): Promise<Service | undefined>;
 }
 
 export class MemStorage implements IStorage {
-  private users: Map<string, User>;
   private services: Service[];
 
   constructor() {
-    this.users = new Map();
     this.services = [
       {
         id: 1,
@@ -191,24 +185,6 @@ export class MemStorage implements IStorage {
         icon: "lottie:network"
       }
     ];
-    this.users = new Map();
-  }
-
-  async getUser(id: string): Promise<User | undefined> {
-    return this.users.get(id);
-  }
-
-  async getUserByUsername(username: string): Promise<User | undefined> {
-    return Array.from(this.users.values()).find(
-      (user) => user.username === username,
-    );
-  }
-
-  async createUser(insertUser: InsertUser): Promise<User> {
-    const id = (this.users.size + 1).toString();
-    const user: User = { ...insertUser, id };
-    this.users.set(id, user);
-    return user;
   }
 
   async getServices(): Promise<Service[]> {
