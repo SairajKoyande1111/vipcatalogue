@@ -191,6 +191,10 @@ export class MemStorage implements IStorage {
         icon: "lottie:network"
       }
     ];
+    this.users = new Map();
+  }
+
+  async getUser(id: string): Promise<User | undefined> {
     return this.users.get(id);
   }
 
