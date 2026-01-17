@@ -69,26 +69,47 @@ export default function Home() {
               <p className="text-gray-400 text-xs mt-4">Click to leave a Google review</p>
             </div>
 
-            {/* Contact Details */}
+            {/* Contact Details Redesign */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 1 }}
-              className="mt-10 flex flex-col items-center gap-6 text-gray-800 text-lg md:text-xl font-semibold max-w-2xl"
+              className="mt-16 flex flex-col items-center gap-12 w-full max-w-2xl"
             >
-              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
-                <div className="flex items-center gap-3">
-                  <Mail size={24} className="text-[#0F172A] shrink-0" />
-                  <a href="mailto:vip.itinfra@gmail.com" className="hover:text-blue-600 transition-colors">vip.itinfra@gmail.com</a>
+              {/* Address Section */}
+              <div className="flex flex-col items-center gap-6">
+                <div className="px-10 py-2 border-2 border-[#0F172A] rounded-full">
+                  <span className="text-[#0F172A] font-bold tracking-[0.2em] text-sm md:text-base">ADDRESS</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Phone size={24} className="text-[#0F172A] shrink-0" />
-                  <a href="tel:+919326144739" className="hover:text-blue-600 transition-colors">+91 9326144739</a>
+                <p className="text-gray-800 text-lg md:text-xl font-medium leading-relaxed max-w-md">
+                  Jogeshwari East, Mumbai - 400060,<br /> Maharashtra.
+                </p>
+              </div>
+
+              {/* Contact Section */}
+              <div className="flex flex-col items-center gap-6">
+                <div className="px-10 py-2 border-2 border-[#0F172A] rounded-full">
+                  <span className="text-[#0F172A] font-bold tracking-[0.2em] text-sm md:text-base">CONTACT</span>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <a href="tel:+919326144739" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
+                    +91 9326144739
+                  </a>
+                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
+                    vip.itinfra@gmail.com
+                  </a>
+                  <a href="https://vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-800 text-lg md:text-xl font-medium hover:text-blue-600 transition-colors">
+                    www.vipnetworks.in
+                  </a>
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-3 text-center px-4">
-                <MapPin size={24} className="text-[#0F172A] shrink-0" />
-                <span>Jogeshwari East, Mumbai - 400060, Maharashtra.</span>
+
+              {/* Footer Branding */}
+              <div className="mt-8 flex flex-col items-center gap-1">
+                <p className="text-gray-500 text-xs md:text-sm font-medium">Developed By</p>
+                <p className="text-[#0F172A] text-sm md:text-base font-bold tracking-widest">
+                  AIRAVATA TECHNOLOGIES
+                </p>
               </div>
             </motion.div>
           </div>
