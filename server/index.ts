@@ -85,6 +85,10 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
+  if (process.env.VERCEL) {
+    // Export the app for Vercel serverless
+    return app;
+  }
   httpServer.listen(
     {
       port,
@@ -96,3 +100,5 @@ app.use((req, res, next) => {
     },
   );
 })();
+
+export default app;
