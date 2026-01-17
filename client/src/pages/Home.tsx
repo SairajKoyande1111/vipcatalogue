@@ -100,12 +100,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-4">
               <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[12px] md:text-lg font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
             </div>
 
             {/* Footer Branding */}
-            <div className="mt-4 md:mt-8 flex flex-col items-center">
+            <div className="mt-2 md:mt-4 flex flex-col items-center">
               <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
               <p className="text-[#0F172A] text-xs font-bold tracking-widest">
                 AIRAVATA TECHNOLOGIES
