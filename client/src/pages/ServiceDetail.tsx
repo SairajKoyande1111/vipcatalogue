@@ -116,11 +116,15 @@ export default function ServiceDetail() {
             </div>
 
             <div className="mt-12 pt-8 border-t border-white/10">
-              <Link href="/contact">
+              <a 
+                href={`https://wa.me/919326144739?text=${encodeURIComponent(`Hi, I'm interested in inquiring about your ${service.title} service. Please provide more details.`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="w-full py-4 bg-primary text-primary-foreground font-bold rounded-xl shadow-lg hover:brightness-110 active:scale-[0.99] transition-all">
                   Inquire About This Service
                 </button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>
