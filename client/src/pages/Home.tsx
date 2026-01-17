@@ -76,33 +76,33 @@ export default function Home() {
             transition={{ delay: 1, duration: 1 }}
             className="flex flex-col items-center w-full max-w-4xl"
           >
-            <div className="flex flex-col md:flex-row items-start justify-center gap-12 md:gap-24 w-full">
+            <div className="flex flex-row items-start justify-center gap-4 md:gap-24 w-full">
               {/* Address */}
               <div className="flex flex-col items-center md:items-start flex-1 w-full">
-                <div className="px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-xs uppercase">ADDRESS</span>
+                <div className="px-4 md:px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[10px] md:text-xs uppercase">ADDRESS</span>
                 </div>
-                <p className="text-gray-700 text-sm md:text-base font-medium text-center md:text-left">
-                  Jogeshwari East, Mumbai 400060,<br />
+                <p className="text-gray-700 text-[11px] md:text-base font-medium text-center md:text-left leading-tight md:leading-normal">
+                  Jogeshwari East,<br className="md:hidden" /> Mumbai 400060,<br />
                   Maharashtra.
                 </p>
               </div>
 
               {/* Contact Details */}
               <div className="flex flex-col items-center md:items-start flex-1 w-full">
-                <div className="px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
-                  <span className="text-[#0F172A] font-bold tracking-widest text-xs uppercase">CONTACT</span>
+                <div className="px-4 md:px-8 py-1.5 border border-[#0F172A] rounded-full mb-4">
+                  <span className="text-[#0F172A] font-bold tracking-widest text-[10px] md:text-xs uppercase">CONTACT</span>
                 </div>
                 <div className="flex flex-col items-center md:items-start gap-1">
-                  <a href="tel:+919326144739" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">+91 9326144739</a>
-                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">vip.itinfra@gmail.com</a>
-                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 font-medium hover:text-[#0F172A] transition-colors">www.vipnetworks.in</a>
+                  <a href="tel:+919326144739" className="text-gray-700 text-[11px] md:text-base font-medium hover:text-[#0F172A] transition-colors whitespace-nowrap">+91 9326144739</a>
+                  <a href="mailto:vip.itinfra@gmail.com" className="text-gray-700 text-[10px] md:text-base font-medium hover:text-[#0F172A] transition-colors break-all md:break-normal text-center md:text-left">vip.itinfra@gmail.com</a>
+                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[11px] md:text-base font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
                 </div>
               </div>
             </div>
 
             {/* Footer Branding */}
-            <div className="mt-12 flex flex-col items-center">
+            <div className="mt-8 md:mt-12 flex flex-col items-center">
               <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
               <p className="text-[#0F172A] text-xs font-bold tracking-widest">
                 AIRAVATA TECHNOLOGIES
