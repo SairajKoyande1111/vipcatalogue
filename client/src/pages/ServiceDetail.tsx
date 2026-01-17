@@ -5,24 +5,33 @@ import { ServiceIcon } from "@/components/ServiceIcon";
 import { ArrowLeft, CheckCircle2, Loader2, AlertCircle } from "lucide-react";
 
 // Import generated images
-import cctvImg from '@assets/generated_images/modern_cctv_security_cameras_setup.png';
-import thermalImg from '@assets/generated_images/thermal_and_fire_detection_system.png';
-import networkingImg from '@assets/generated_images/modern_server_room_networking_equipment.png';
-import wifiImg from '@assets/generated_images/wireless_access_point_networking_device.png';
 import defaultImg from '@assets/stock_images/it_infrastructure_an_c2bc155e.jpg';
 
+// Import new service images
+import img1 from '@assets/image_1768670763884.png';
+import img2 from '@assets/image_1768670897509.png';
+import img3 from '@assets/image_1768671048583.png';
+import img4 from '@assets/image_1768671151946.png';
+import img5 from '@assets/image_1768671250449.png';
+import img6 from '@assets/image_1768671319386.png';
+import img7 from '@assets/image_1768671412384.png';
+import img8 from '@assets/image_1768671439267.png';
+import img9 from '@assets/image_1768671480284.png';
+import img10 from '@assets/image_1768671507203.png';
+import img11 from '@assets/image_1768671560428.png';
+
 const serviceImages: Record<number, string> = {
-  1: cctvImg,
-  2: thermalImg,
-  3: networkingImg, // Intercom & IPBX
-  4: defaultImg,    // Biometrics
-  5: networkingImg, // PA
-  6: defaultImg,    // AV
-  7: defaultImg,    // Projector
-  8: defaultImg,    // Printers
-  9: defaultImg,    // UPS
-  10: networkingImg, // IoT
-  11: wifiImg,       // Network Booster
+  1: img1,
+  2: img2,
+  3: img3,
+  4: img4,
+  5: img5,
+  6: img6,
+  7: img7,
+  8: img8,
+  9: img9,
+  10: img10,
+  11: img11,
 };
 
 export default function ServiceDetail() {
