@@ -161,16 +161,16 @@ export default function Services() {
                     </div>
                     
                     {/* Content */}
-                    <h3 className={`text-2xl font-display font-bold mb-3 transition-colors uppercase ${isWhiteCard ? 'text-black' : 'text-white group-hover:text-primary'}`}>
+                    <h3 className={`text-2xl font-display font-bold mb-3 transition-colors uppercase transform group-hover:scale-105 group-active:scale-95 duration-300 ${isWhiteCard ? 'text-black' : 'text-white group-hover:text-primary'}`}>
                       {service.title}
                     </h3>
                     {!isWhiteCard && !isLottieCard && service.description && (
-                      <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                      <p className="text-gray-400 text-sm leading-relaxed mb-6 line-clamp-3 transform group-hover:translate-y-[-2px] duration-300">
                         {service.description}
                       </p>
                     )}
                     
-                    <div className={`mt-auto flex items-center gap-2 text-sm font-bold ${isWhiteCard ? 'text-black' : 'text-primary'}`}>
+                    <div className={`mt-auto w-full flex justify-end items-center gap-2 text-sm font-bold ${isWhiteCard ? 'text-black' : 'text-primary'}`}>
                       View Details
                       <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                     </div>
