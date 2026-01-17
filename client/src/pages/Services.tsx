@@ -119,9 +119,9 @@ export default function Services() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-16 md:mb-24 text-center"
+          className="mb-8 md:mb-12 text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-display font-bold text-white mb-6 uppercase inline-block border-b-2 border-primary pb-2">
+          <h1 className="text-4xl md:text-6xl font-display font-bold text-white uppercase inline-block">
             Our Services
           </h1>
         </motion.div>

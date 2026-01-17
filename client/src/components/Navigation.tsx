@@ -54,7 +54,7 @@ export function Navigation() {
         <Link href="/" className="pointer-events-auto">
           <div className="flex flex-col px-4 py-2 text-center">
             <span className="text-xl md:text-2xl font-display font-bold text-white tracking-wide uppercase">
-              VIP <span className="text-primary">NETWORKS</span>
+              VIP NETWORKS
             </span>
           </div>
         </Link>
