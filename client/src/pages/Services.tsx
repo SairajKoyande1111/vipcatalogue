@@ -44,7 +44,7 @@ const patchLottie = (data: any) => {
   newData.assets.forEach((asset: any) => {
     if (asset.p) {
       // Ensure the asset path is correctly resolved relative to the public root
-      asset.u = "/images/";
+      asset.u = "/src/assets/lottie/images/";
     }
   });
   return newData;
