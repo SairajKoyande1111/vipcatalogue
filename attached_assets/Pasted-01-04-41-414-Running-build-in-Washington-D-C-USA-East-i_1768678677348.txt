@@ -1,0 +1,78 @@
+01:04:41.414 Running build in Washington, D.C., USA (East) – iad1
+01:04:41.414 Build machine configuration: 2 cores, 8 GB
+01:04:41.593 Cloning github.com/SairajKoyande1111/vipcatalogue (Branch: main, Commit: fe648f8)
+01:04:44.964 Cloning completed: 3.371s
+01:04:45.065 Restored build cache from previous deployment (AuTtegTtqEGBiRXb9TKvEthy467m)
+01:04:45.388 Running "vercel build"
+01:04:46.379 Vercel CLI 50.4.4
+01:04:46.506 WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+01:04:47.040 Installing dependencies...
+01:04:48.597 
+01:04:48.598 up to date in 1s
+01:04:48.598 
+01:04:48.598 74 packages are looking for funding
+01:04:48.599   run `npm fund` for details
+01:04:48.633 Running "npm run build"
+01:04:48.733 
+01:04:48.734 > rest-express@1.0.0 build
+01:04:48.734 > tsx script/build.ts
+01:04:48.734 
+01:04:49.773 building client...
+01:04:49.890 [36mvite v7.3.0 [32mbuilding client environment for production...[36m[39m
+01:04:50.215 transforming...
+01:04:56.182 [32m✓[39m 2036 modules transformed.
+01:04:56.390 [33mnode_modules/lottie-web/build/player/lottie.js (14422:32): Use of eval in "node_modules/lottie-web/build/player/lottie.js" is strongly discouraged as it poses security risks and may cause issues with minification.[39m
+01:04:57.000 rendering chunks...
+01:04:57.043 computing gzip size...
+01:04:57.225 [2m../dist/public/[22m[32mindex.html                                                                                  [39m[1m[2m    2.01 kB[22m[1m[22m[2m │ gzip:   0.77 kB[22m
+01:04:57.225 [2m../dist/public/[22m[2massets/[22m[32mlinkedin_1768672408422-DgLzhU7_.png                                                  [39m[1m[2m   11.48 kB[22m[1m[22m
+01:04:57.225 [2m../dist/public/[22m[2massets/[22m[32mthermal-CVRhnmPJ.dotlottie                                                           [39m[1m[2m   14.97 kB[22m[1m[22m
+01:04:57.225 [2m../dist/public/[22m[2massets/[22m[32mlogo_1768672400400-WYmd2TnC.png                                                      [39m[1m[2m   27.02 kB[22m[1m[22m
+01:04:57.225 [2m../dist/public/[22m[2massets/[22m[32minstagram_1768672404823-Dbq-n8qV.png                                                 [39m[1m[2m   52.99 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mtech-Brez_wKf.dotlottie                                                              [39m[1m[2m   80.41 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mit_infrastructure_an_c2bc155e-LU-pYrlO.jpg                                           [39m[1m[2m  186.20 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671439267-CSYAEUR4.png                                                     [39m[1m[2m  212.47 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mdashboards-BWooq2gE.lottie                                                           [39m[1m[2m  242.88 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671151946-cEAXCE92.png                                                     [39m[1m[2m  272.09 kB[22m[1m[22m
+01:04:57.226 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671560428-DkOfKIjR.png                                                     [39m[1m[2m  303.36 kB[22m[1m[22m
+01:04:57.227 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671250449-BiiOx7Do.png                                                     [39m[1m[2m  341.18 kB[22m[1m[22m
+01:04:57.227 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671480284-C4Mloor6.png                                                     [39m[1m[2m  535.66 kB[22m[1m[22m
+01:04:57.227 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671507203-BQEen9MV.png                                                     [39m[1m[2m  596.62 kB[22m[1m[22m
+01:04:57.227 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671319386-Cm_kdstM.png                                                     [39m[1m[2m  760.14 kB[22m[1m[22m
+01:04:57.227 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671048583-DXppf51r.png                                                     [39m[1m[2m  819.59 kB[22m[1m[22m
+01:04:57.228 [2m../dist/public/[22m[2massets/[22m[32mimage_1768670763884-C3zXBnqv.png                                                     [39m[1m[2m  876.36 kB[22m[1m[22m
+01:04:57.228 [2m../dist/public/[22m[2massets/[22m[32mhigh-performance_network_signal_booster_and_mesh_antenna.-v-i-McgD.png               [39m[1m[2m  899.17 kB[22m[1m[22m
+01:04:57.228 [2m../dist/public/[22m[2massets/[22m[32mprofessional_ip-based_public_address_speakers_in_a_modern_lobby.-Br_39I2n.png        [39m[1m[2m  979.59 kB[22m[1m[22m
+01:04:57.231 [2m../dist/public/[22m[2massets/[22m[32mimage_1768671412384-Bm28qav1.png                                                     [39m[1m[2m  983.01 kB[22m[1m[22m
+01:04:57.231 [2m../dist/public/[22m[2massets/[22m[32mfacial_recognition_and_biometric_access_control_door_lock.-BjMA56NR.png              [39m[1m[2m  989.38 kB[22m[1m[22m
+01:04:57.231 [2m../dist/public/[22m[2massets/[22m[32madvanced_thermal_imaging_and_fire_detection_sensor_system.-C-Br9QMC.png              [39m[1m[2m1,104.15 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mmodern_enterprise_ip_intercom_and_ipbx_communication_system.-Dp9s_yvd.png            [39m[1m[2m1,127.92 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mmodern_high-tech_cctv_security_surveillance_system_with_ai_monitoring.-IHYvLY2k.png  [39m[1m[2m1,182.52 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mimage_1768670897509-B4GafKWZ.png                                                     [39m[1m[2m1,223.88 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32menterprise_it_hardware_setup_with_printers_and_laptops.-CNbrcsOX.png                 [39m[1m[2m1,256.10 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mcloud_computing_and_iot_data_visualization_dashboard.-BG1RHUBe.png                   [39m[1m[2m1,266.60 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32menterprise_ups_and_battery_backup_system_in_a_data_center.-uF6hQW6L.png              [39m[1m[2m1,374.43 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32msmart_boardroom_with_integrated_av_and_room_automation.-DCqOijSw.png                 [39m[1m[2m1,560.76 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mmodern_large-scale_high-resolution_led_video_wall.-CUkHAMSf.png                      [39m[1m[2m1,673.90 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[32mUntitled_design_1768672215327-BFCU0fXq.png                                           [39m[1m[2m2,499.24 kB[22m[1m[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[35mindex-VnW6P5m1.css                                                                   [39m[1m[2m   72.88 kB[22m[1m[22m[2m │ gzip:  11.95 kB[22m
+01:04:57.232 [2m../dist/public/[22m[2massets/[22m[36mindex-DIvJ2-UC.js                                                                    [39m[1m[33m3,783.07 kB[39m[22m[2m │ gzip: 689.44 kB[22m
+01:04:57.232 [32m✓ built in 6.98s[39m
+01:04:57.233 building server...
+01:04:57.233 [33m
+01:04:57.234 (!) Some chunks are larger than 500 kB after minification. Consider:
+01:04:57.234 - Using dynamic import() to code-split the application
+01:04:57.234 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+01:04:57.242 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+01:04:57.388 
+01:04:57.392   dist/index.cjs  896.5kb
+01:04:57.392 
+01:04:57.392 ⚡ Done in 147ms
+01:04:58.126 Using TypeScript 5.6.3 (local user-provided)
+01:05:13.013 Build Completed in /vercel/output [26s]
+01:05:13.229 Deploying outputs...
+01:05:20.703 Deployment completed
+01:05:21.649 Creating build cache...
+01:05:41.562 Created build cache: 19.907s
+01:05:41.562 Uploading build cache [98.68 MB]
+01:05:43.613 Build cache uploaded: 2.055s
