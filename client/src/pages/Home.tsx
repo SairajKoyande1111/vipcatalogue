@@ -18,11 +18,11 @@ export default function Home() {
           className="w-full flex flex-col items-center"
         >
           {/* Logo Section */}
-          <div className="mb-0 flex flex-col items-center -mt-12">
+          <div className="mb-0 flex flex-col items-center -mt-20">
             <motion.img 
               src={logoImg} 
               alt="VIP Networks Logo" 
-              className="w-[22rem] md:w-[26rem] lg:w-[30rem] h-auto"
+              className="w-[24rem] md:w-[28rem] lg:w-[32rem] h-auto"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
 
           {/* Social Icons Section */}
-          <div className="flex gap-6 mb-6 -mt-2">
+          <div className="flex gap-6 mb-4 -mt-10">
             <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
               <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
             </a>
