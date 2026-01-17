@@ -7,18 +7,18 @@ import { ArrowLeft, CheckCircle2, Loader2, AlertCircle } from "lucide-react";
 // Import generated images
 import defaultImg from '@assets/stock_images/it_infrastructure_an_c2bc155e.jpg';
 
-// Import new service images
-import img1 from '@assets/image_1768670763884.png';
-import img2 from '@assets/image_1768670897509.png';
-import img3 from '@assets/image_1768671048583.png';
-import img4 from '@assets/image_1768671151946.png';
-import img5 from '@assets/image_1768671250449.png';
-import img6 from '@assets/image_1768671319386.png';
-import img7 from '@assets/image_1768671412384.png';
-import img8 from '@assets/image_1768671439267.png';
-import img9 from '@assets/image_1768671480284.png';
-import img10 from '@assets/image_1768671507203.png';
-import img11 from '@assets/image_1768671560428.png';
+// Import new generated images
+import img1 from '@assets/generated_images/modern_high-tech_cctv_security_surveillance_system_with_ai_monitoring..png';
+import img2 from '@assets/generated_images/advanced_thermal_imaging_and_fire_detection_sensor_system..png';
+import img3 from '@assets/generated_images/modern_enterprise_ip_intercom_and_ipbx_communication_system..png';
+import img4 from '@assets/generated_images/facial_recognition_and_biometric_access_control_door_lock..png';
+import img5 from '@assets/generated_images/professional_ip-based_public_address_speakers_in_a_modern_lobby..png';
+import img6 from '@assets/generated_images/smart_boardroom_with_integrated_av_and_room_automation..png';
+import img7 from '@assets/generated_images/modern_large-scale_high-resolution_led_video_wall..png';
+import img8 from '@assets/generated_images/enterprise_it_hardware_setup_with_printers_and_laptops..png';
+import img9 from '@assets/generated_images/enterprise_ups_and_battery_backup_system_in_a_data_center..png';
+import img10 from '@assets/generated_images/cloud_computing_and_iot_data_visualization_dashboard..png';
+import img11 from '@assets/generated_images/high-performance_network_signal_booster_and_mesh_antenna..png';
 
 const serviceImages: Record<number, string> = {
   1: img1,
