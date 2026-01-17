@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Mail, Phone, MapPin, ArrowLeft, Globe } from "lucide-react";
+import { Menu, X, Mail, Phone, MapPin, ArrowLeft, Globe, Gem, UserCheck, Handshake } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useServices } from "@/hooks/use-services";
 import instagramIcon from '@assets/instagram_1768672404823.png';
@@ -9,7 +9,7 @@ import linkedinIcon from '@assets/linkedin_1768672408422.png';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const { data: services } = useServices();
 
   const toggleMenu = () => setIsOpen(!isOpen);
