@@ -34,7 +34,7 @@ const patchLottie = (data: any) => {
   const newData = JSON.parse(JSON.stringify(data));
   newData.assets.forEach((asset: any) => {
     if (asset.p) {
-      // Use absolute path for public images
+      // Ensure the asset path is correctly resolved relative to the public root
       asset.u = "/images/";
     }
   });
