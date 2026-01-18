@@ -5,8 +5,14 @@ import logoImg from '@assets/Untitled_design_1768672215327.png';
 import whatsappIcon from '@assets/logo_1768672400400.png';
 import instagramIcon from '@assets/instagram_1768672404823.png';
 import linkedinIcon from '@assets/linkedin_1768672408422.png';
+import welcomeSound from '@assets/ElevenLabs_2026-01-18T07_30_13_Adam_-_Dominant,_Firm_pre_sp120_1768721439522.mp3';
 
 export default function Home() {
+  const playWelcomeSound = () => {
+    const audio = new Audio(welcomeSound);
+    audio.play().catch(error => console.error("Error playing sound:", error));
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-start bg-white pt-10 pb-10">
       {/* Main Content */}
@@ -19,14 +25,17 @@ export default function Home() {
         >
           {/* Logo Section */}
           <div className="mb-0 flex flex-col items-center -mt-20">
-            <motion.img 
-              src={logoImg} 
-              alt="VIP Networks Logo" 
-              className="w-[24rem] md:w-[28rem] lg:w-[32rem] h-auto"
+            <motion.div 
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-            />
+            >
+              <img 
+                src={logoImg} 
+                alt="VIP Networks Logo" 
+                className="w-[24rem] md:w-[28rem] lg:w-[32rem] h-auto"
+              />
+            </motion.div>
           </div>
 
           {/* Social Icons Section */}
@@ -45,7 +54,10 @@ export default function Home() {
           {/* CTA Button Section */}
           <div className="w-full max-w-xs mb-8">
             <Link href="/services">
-              <button className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center">
+              <button 
+                onClick={playWelcomeSound}
+                className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center"
+              >
                 EXPLORE OUR SERVICES
               </button>
             </Link>
