@@ -140,6 +140,21 @@ export class MemStorage implements IStorage {
       },
       {
         id: 9,
+        title: "High-Performance Network Expansion & Signal Optimization",
+        description: "Enhance network performance by improving speed, stability, and coverage across your facility.",
+        detailedDescription: "Enhances your existing network performance by improving speed, stability, and coverage. Optimizes bandwidth distribution, reduces latency, and eliminates dead zones using advanced signal-routing and load-balancing technology.",
+        bullets: [
+          "AI-Optimized Traffic Routing",
+          "Edge-Based Signal Amplification",
+          "Adaptive Mesh Networking",
+          "Network Security Boost (Zero Trust + Threat Detection)",
+          "Wi-Fi 6E / Wi-Fi 7 Performance Upgrade",
+          "Wireless Mesh Network Optimization"
+        ],
+        icon: "lottie:network"
+      },
+      {
+        id: 10,
         title: "Smart Power Backup, UPS & Energy Storage",
         description: "Reliable power backup solutions with advanced monitoring to ensure uninterrupted operations.",
         detailedDescription: "Reliable power backup solutions to ensure uninterrupted operations for critical infrastructure. Comprehensive UPS and battery management systems. Includes online & line-interactive UPS systems, battery health monitoring, and enterprise power backup solutions with remote alerts.",
@@ -155,7 +170,7 @@ export class MemStorage implements IStorage {
         icon: "battery-charging"
       },
       {
-        id: 10,
+        id: 11,
         title: "IoT-Enabled Cloud, Software & Automation Platforms",
         description: "Smart device integration with real-time data monitoring and secure cloud infrastructure.",
         detailedDescription: "Smart device integration with real-time data monitoring and automation. Secure cloud infrastructure for scalable storage and remote management. Custom software applications to streamline workflows and enhance system performance. End-to-end digital solutions enabling efficient, connected, and data-driven operations.",
@@ -168,21 +183,6 @@ export class MemStorage implements IStorage {
           "Cloud migration"
         ],
         icon: "cloud"
-      },
-      {
-        id: 11,
-        title: "High-Performance Network Expansion & Signal Optimization",
-        description: "Enhance network performance by improving speed, stability, and coverage across your facility.",
-        detailedDescription: "Enhances your existing network performance by improving speed, stability, and coverage. Optimizes bandwidth distribution, reduces latency, and eliminates dead zones using advanced signal-routing and load-balancing technology.",
-        bullets: [
-          "AI-Optimized Traffic Routing",
-          "Edge-Based Signal Amplification",
-          "Adaptive Mesh Networking",
-          "Network Security Boost (Zero Trust + Threat Detection)",
-          "Wi-Fi 6E / Wi-Fi 7 Performance Upgrade",
-          "Wireless Mesh Network Optimization"
-        ],
-        icon: "lottie:network"
       }
     ];
   }
