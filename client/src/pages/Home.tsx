@@ -1,17 +1,21 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
 import { Star, MapPin, Phone, Mail } from "lucide-react";
+import { useEffect } from "react";
 import logoImg from '@assets/Untitled_design_1768672215327.png';
-import whatsappIcon from '@assets/logo_1768672400400.png';
-import instagramIcon from '@assets/instagram_1768672404823.png';
-import linkedinIcon from '@assets/linkedin_1768672408422.png';
-import welcomeSound from '@assets/ElevenLabs_2026-01-18T07_30_13_Adam_-_Dominant,_Firm_pre_sp120_1768721439522.mp3';
 
 export default function Home() {
-  const playWelcomeSound = () => {
-    const audio = new Audio(welcomeSound);
-    audio.play().catch(error => console.error("Error playing sound:", error));
-  };
+  useEffect(() => {
+    const playWelcome = () => {
+      const audio = new Audio("/welcome.mp3");
+      audio.play().catch(error => {
+        console.log("Autoplay prevented or error:", error);
+      });
+    };
+    
+    // Attempt to play on mount
+    playWelcome();
+  }, []);
 
   return (
     <div className="min-h-screen relative overflow-hidden flex flex-col items-center justify-start bg-white pt-10 pb-10">
@@ -38,24 +42,10 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Social Icons Section */}
-          <div className="flex gap-6 mb-4 -mt-12">
-            <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
-            </a>
-            <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
-            </a>
-            <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-              <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />
-            </a>
-          </div>
-
           {/* CTA Button Section */}
           <div className="w-full max-w-xs mb-8">
             <Link href="/services">
               <button 
-                onClick={playWelcomeSound}
                 className="w-full py-4 bg-[#0F172A] text-white rounded-full font-bold text-lg hover:bg-[#1a2b4a] transition-all shadow-lg flex items-center justify-center"
               >
                 EXPLORE OUR SERVICES
@@ -112,21 +102,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-4">
-              <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[14px] md:text-xl font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
-            </div>
-
-            {/* Footer Branding */}
-            <div className="mt-2 md:mt-4 flex flex-col items-center">
-              <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Developed By</p>
-              <a 
-                href="https://www.airavatatechnologies.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-[#0F172A] text-xs font-bold tracking-widest hover:text-[#1a2b4a] transition-colors"
-              >
-                AIRAVATA TECHNOLOGIES
-              </a>
+            <div className="mt-4 flex flex-col items-center gap-1">
+              <span className="text-gray-700 text-[14px] md:text-xl font-medium">Website</span>
+              <a href="https://vipnetworks.netlify.app" target="_blank" rel="noopener noreferrer" className="text-gray-700 text-[14px] md:text-xl font-medium hover:text-[#0F172A] transition-colors">vipnetworks.netlify.app</a>
             </div>
           </motion.div>
         </motion.div>

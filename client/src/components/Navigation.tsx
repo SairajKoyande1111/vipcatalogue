@@ -134,21 +134,9 @@ export function Navigation() {
 
                 <div className="flex items-center gap-3 text-gray-600">
                   <Globe className="w-5 h-5 text-[#0F172A] shrink-0" />
-                  <a href="https://www.vipnetworks.in" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-[#0F172A] transition-colors">vipnetworks.in</a>
-                </div>
-
-                <div className="pt-6">
-                  <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Connect With Us</p>
-                  <div className="flex gap-4">
-                    <a href="https://www.instagram.com/vip_networks/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src={instagramIcon} alt="Instagram" className="w-10 h-10" />
-                    </a>
-                    <a href="https://wa.me/919326144739" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src={whatsappIcon} alt="WhatsApp" className="w-10 h-10" />
-                    </a>
-                    <a href="https://linkedin.com/company/vipnetworks" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                      <img src={linkedinIcon} alt="LinkedIn" className="w-10 h-10" />
-                    </a>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">Website</span>
+                    <a href="https://vipnetworks.netlify.app" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-[#0F172A] transition-colors">vipnetworks.netlify.app</a>
                   </div>
                 </div>
               </div>
