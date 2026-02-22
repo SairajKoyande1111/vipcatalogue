@@ -57,7 +57,7 @@ const patchedLottieAnimations: Record<number, any> = {
   7: dashboardsLottie,
   8: patchLottie(wifiPrinter),
   9: patchLottie(carBattery),
-  10: patchLottie(iotAnimation),
+  10: iotAnimation.assets ? patchLottie(iotAnimation) : iotAnimation,
 };
 
 const serviceImages: Record<number, string> = {
