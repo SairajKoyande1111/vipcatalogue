@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "vip-networks",
+      name: "vip-networkscatalogue",
       script: "./dist/index.cjs",
       interpreter: "node",
       env: {
